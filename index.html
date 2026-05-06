@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khaled | Portfolio</title>
+    <meta name="description" content="Personal portfolio of Khaled — Software Developer crafting elegant solutions." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="logo.png" />
+</head>
+
+<body>
+
+    <!-- stars bg -->
+    <canvas id="star-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-logo">
+            <span class="logo-bracket">&lt;</span>KH<span class="logo-bracket">/&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-cta" id="lang-switch">EN / AR</button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Khaled<br /><span class="hero-name-accent">El-Senoussi</span></h1>
+                <p class="hero-role">
+                    <span class="role-prefix">— </span>
+                    <span class="typed-text" id="typed"></span><span class="cursor">|</span>
+                </p>
+                <p class="hero-subtitle">I build high-quality software experiences, specializing in Data Analytics,
+                    Custom
+                    Software, Desktop Apps, Websites, and Automations for 3+ years.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-number">3+</span><span class="stat-label">Years Exp</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat"><span class="stat-number">40+</span><span class="stat-label">Projects</span></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat"><span class="stat-number">25+</span><span class="stat-label">Clients</span></div>
+                </div>
+            </div>
+
+            <!-- pfp & orbits -->
+            <div class="hero-image-wrapper">
+                <!-- bg rings -->
+                <div class="orbit-ring ring-1"></div>
+                <div class="orbit-ring ring-2"></div>
+                <div class="orbit-ring ring-3"></div>
+
+                <!-- Orbiting icons -->
+                <div class="orbit-icon icon-1" title="Python">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python" />
+                </div>
+                <div class="orbit-icon icon-2" title="JavaScript">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript" />
+                </div>
+                <div class="orbit-icon icon-3" title="React">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt="React" />
+                </div>
+                <div class="orbit-icon icon-4" title="Database">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                        alt="Database" />
+                </div>
+                <div class="orbit-icon icon-5" title="Git">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                </div>
+                <div class="orbit-icon icon-6" title="Flutter">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                        alt="Flutter" />
+                </div>
+
+                <!-- Extra icons -->
+                <div class="orbit-icon icon-7" title="Excel">
+                    <i class="fa-solid fa-file-excel" style="color: #217346; font-size: 1.3rem;"></i>
+                </div>
+                <div class="orbit-icon icon-8" title="SQL Server">
+                    <i class="fa-solid fa-database" style="color: #CC2927; font-size: 1.3rem;"></i>
+                </div>
+                <div class="orbit-icon icon-9" title="HTML5">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        alt="HTML5" />
+                </div>
+                <div class="orbit-icon icon-10" title="CSS3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+                </div>
+                <div class="orbit-icon icon-11" title="Power BI">
+                    <i class="fa-solid fa-chart-column" style="color: #F2C811; font-size: 1.3rem;"></i>
+                </div>
+
+                <!-- Corner decorations -->
+                <div class="corner-deco deco-tl"></div>
+                <div class="corner-deco deco-tr"></div>
+                <div class="corner-deco deco-bl"></div>
+                <div class="corner-deco deco-br"></div>
+
+                <!-- Floating badges -->
+                <div class="float-badge badge-top">
+                    <span class="badge-dot"></span> Available for work
+                </div>
+                <div class="float-badge badge-bottom">
+                    <span>⭐ Top Rated</span>
+                </div>
+
+                <!-- Profile image -->
+                <div class="profile-frame">
+                    <img src="profile.png" alt="Khaled El-Senoussi" class="profile-img" id="profile-img" />
+                    <div class="profile-glow"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll hint -->
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a passionate <strong>Software Developer</strong> and <strong>Data Analytics Expert</strong>
+                        with
+                        over 3 years of experience. I specialize in crafting elegant solutions for data analytics,
+                        custom
+                        software, desktop applications, websites, and process automations.</p>
+                    <p>From enterprise-grade HR systems to interactive web platforms, I bring a blend of technical depth
+                        and creative vision to every project. I thrive in fast-paced environments where innovation and
+                        performance matter.</p>
+                    <p>When I'm not coding, I'm exploring open-source projects, learning new frameworks, and
+                        contributing to the developer community.</p>
+                    <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem;">Let's Connect</a>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <div class="info-card-icon">🎓</div>
+                        <div>
+                            <h4>Education</h4>
+                            <p>B.Sc. Computer Science</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">🌍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Available Worldwide</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">💼</div>
+                        <div>
+                            <h4>Experience</h4>
+                            <p>3+ Years Professional</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">🚀</div>
+                        <div>
+                            <h4>Focus</h4>
+                            <p>Software, Analytics & Websites</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">My <span class="accent">Skills</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">Frontend</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item"><span>HTML / CSS</span>
+                            <div class="bar">
+                                <div class="bar-fill" data-w="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item"><span>JavaScript</span>
+                            <div class="bar">
+                                <div class="bar-fill" data-w="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item"><span>React</span>
+                            <div class="bar">
+                                <div class="bar-fill" data-w="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item"><span>Flutter</span>
+                            <div class="bar">
+                                <div class="bar-fill" data-w="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">Backend</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item"><span>Python</span>
+                            <div class="bar">
+                                <div class="bar-fill" data-w="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item"><span>Node.js</span>
+                            <div class="bar">
+                                <div class="bar-fill" data-w="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item"><span>SQL / Firebase</span>
+                            <div class="bar">
+                                <div class="bar-fill" data-w="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item"><span>REST APIs</span>
+                            <div class="bar">
+                                <div class="bar-fill" data-w="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">Tools & More</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item"><span>Git / GitHub</span>
+                            <div class="bar">
+                                <div class="bar-fill" data-w="93"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item"><span>PyQt5 / Desktop</span>
+                            <div class="bar">
+                                <div class="bar-fill" data-w="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item"><span>Power BI / Excel</span>
+                            <div class="bar">
+                                <div class="bar-fill" data-w="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item"><span>Data Visualization</span>
+                            <div class="bar">
+                                <div class="bar-fill" data-w="87"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I've Built</span>
+                <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Row 1 -->
+                <div class="project-card" id="proj-1">
+                    <div class="project-img-wrap">
+                        <div class="project-img p-img-1"></div>
+                        <div class="project-overlay">
+                            <a href="HR-System.gif" class="proj-btn demo-trigger">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags"><span>Flutter</span><span>SQLite</span><span>Firebase</span></div>
+                        <h3>HR Management System</h3>
+                        <p>A full-featured enterprise HR system with employee management, payroll reports, attendance tracking, and role-based authentication.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-4">
+                    <div class="project-img-wrap">
+                        <div class="project-img p-img-4"></div>
+                        <div class="project-overlay">
+                            <a href="#" class="proj-btn">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                        <h3>Portfolio Website</h3>
+                        <p>This very portfolio — designed from scratch with parallax star animations, glassmorphism, and advanced CSS/JS interactions.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-5">
+                    <div class="project-img-wrap">
+                        <div class="project-img p-img-5"></div>
+                        <div class="project-overlay">
+                            <a href="Global Layoffs & Job Market Intelligence.png" class="proj-btn dashboard-btn demo-trigger">Dashboard</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags"><span>Power BI</span><span>SQL</span><span>Data Analytics</span></div>
+                        <h3>Global Layoffs & Job Market Intelligence</h3>
+                        <p>A comprehensive Power BI dashboard analyzing global layoff trends, market impacts, and industry-wise job intelligence with interactive data visualizations.</p>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="project-card" id="proj-2">
+                    <div class="project-img-wrap">
+                        <div class="project-img p-img-2"></div>
+                        <div class="project-overlay">
+                            <a href="Real-time Dashboard.gif" class="proj-btn demo-trigger">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags"><span>React</span><span>Node.js</span><span>Firebase</span></div>
+                        <h3>Real-time Dashboard</h3>
+                        <p>An analytics dashboard with live data streaming, interactive charts, and user management, built with React and Firebase.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-3">
+                    <div class="project-img-wrap">
+                        <div class="project-img p-img-3"></div>
+                        <div class="project-overlay">
+                            <a href="Luminary.gif" class="proj-btn demo-trigger">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span><span>Python</span><span>ML</span><span>API</span></div>
+                        <h3>Luminary AI Studio</h3>
+                        <p>A state-of-the-art AI image generation studio that transforms text prompts into stunning visual art using advanced machine learning models.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-6">
+                    <div class="project-img-wrap">
+                        <div class="project-img p-img-6"></div>
+                        <div class="project-overlay">
+                            <a href="#" class="proj-btn process-btn demo-trigger" data-images="1.jpg,2.jpg,3.jpg,4.jpg,5.jpg,6.jpg,7.jpg,8.jpg,9.jpg">Process</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags"><span>Python</span><span>Jupyter</span><span>ML</span><span>Analytics</span></div>
+                        <h3>Global YouTube Statistics</h3>
+                        <p>A data-driven analysis using Jupyter Notebook to extract insights and future predictions for YouTube channels globally. Includes data cleaning, EDA, and predictive machine learning models.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="projects-note">Many of my professional projects are protected by Non-Disclosure Agreements (NDAs) and cannot be displayed publicly. Feel free to contact me for a detailed discussion of my professional experience.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Talk</span>
+                <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+            </div>
+            <div class="contact-wrap">
+                <div class="contact-info">
+                    <p>I'm always open to new opportunities, collaborations, or just a friendly chat about technology.
+                        Feel free to reach out!</p>
+                    <div class="contact-links">
+                        <div class="contact-link" id="email-link">
+                            <span class="cl-icon">✉️</span>
+                            <span>khaled.m.elsenosy@gmail.com</span>
+                        </div>
+                        <a href="https://github.com/KhaledElsenosy" class="contact-link" id="github-link" target="_blank">
+                            <span class="cl-icon">🐙</span>
+                            <span>github.com/KhaledElsenosy</span>
+                        </a>
+                        <a href="https://linkedin.com/in/khaled-mohamed-912405397" class="contact-link" id="linkedin-link" target="_blank">
+                            <span class="cl-icon">💼</span>
+                            <span>linkedin.com/in/khaled-mohamed</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" action="https://formsubmit.co/khaled.m.elsenosy@gmail.com" method="POST">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="New Portfolio Message!">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div class="form-group">
+                        <input type="text" id="form-name" name="name" placeholder="Your Name" required />
+                        <label for="form-name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="form-email" name="email" placeholder="Your Email" required />
+                        <label for="form-email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="form-message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                        <label for="form-message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Send Message 🚀</button>
+                    <p class="form-success" id="form-success">Message sent! I'll reply soon. ✅</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <p>© 2026 Khaled El-Senoussi. Built with passion & pixels.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
